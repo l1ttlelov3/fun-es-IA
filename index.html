@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Qual profissão combina com você?</title>
     <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
 </head>
 <body>
-    <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado"></div>
-            <p class="texto-resultado"></p>
+    <div id="quiz-container">
+        <h1>Qual profissão combina com você?</h1>
+        
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="question-container">
+            <h2 id="question">Pergunta</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Resposta 1</button>
+                <button class="btn">Resposta 2</button>
+                <button class="btn">Resposta 3</button>
+                <button class="btn">Resposta 4</button>
+            </div>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2 id="result-title">Seu Resultado</h2>
+            <img id="result-image" src="" alt="Imagem do resultado">
+            <p id="result-description"></p>
+            <button id="restart-btn">Recomeçar</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
